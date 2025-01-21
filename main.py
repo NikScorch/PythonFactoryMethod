@@ -35,6 +35,10 @@ class PizzaStore:
         for pizza_class in Pizza.__subclasses__():              # All classes in python know their subclasses.
             if pizza_order in pizza_class.__name__.lower():     # Check if the pizza order is in the pizza class name.
                 pizza = pizza_class()                           # Create a pizza object.
+                                                                # "pizza_class" is the class name, not the instance.
+
+                                                                # If pizza_order is "cheese", 
+                                                                # then pizza_class is CheesePizza.
                 break
         else:                   # Else is called when the for loop doesn't break.
             pizza = Pizza()     # Therefore, must be a custom pizza.
