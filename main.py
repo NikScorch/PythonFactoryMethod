@@ -63,9 +63,9 @@ def main():
         print()
 
         pizza_subclass = Pizza.__subclasses__()[0]
-        print("First Pizza subclass:".ljust(30), pizza_subclass)
-        print("First Pizza subclass type:".ljust(30), type(pizza_subclass))
-        print("First Pizza subclass instance:".ljust(30), pizza_subclass())
+        print("First Pizza subclass:".ljust(30),            pizza_subclass)
+        print("First Pizza subclass type:".ljust(30),       type(pizza_subclass))
+        print("First Pizza subclass instance:".ljust(30),   pizza_subclass())
 
 
 if __name__ == "__main__":
